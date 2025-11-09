@@ -25,3 +25,8 @@ An **LED indicator** connected at the output shows when the filtered signal is a
 This demonstrates how **natural biological energy** can be effectively integrated into a simple analog circuit.
 
 ---
+<img width="1214" height="978" alt="image" src="https://github.com/user-attachments/assets/9a05b353-c14a-4764-b585-61d09a7dc61f" />
+<img width="1429" height="774" alt="image" src="https://github.com/user-attachments/assets/d839746f-912d-4262-9294-05ed91994864" />
+<img width="755" height="669" alt="image" src="https://github.com/user-attachments/assets/0fb78e93-325d-4a1e-b449-603c030b4713" />
+
+
