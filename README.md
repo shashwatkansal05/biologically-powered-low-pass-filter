@@ -1,27 +1,27 @@
-const int OUT_PIN = 9;
-unsigned long hold_ms = 3000;  // stay at each frequency for 3 seconds
+# 🍋 Biologically Powered Low-Pass Filter
 
-void setup() {
-  pinMode(OUT_PIN, OUTPUT);
-}
+### 🚀 Overview  
+This project demonstrates how **biological energy sources** (like lemon cells) can be used to power an **analog low-pass filter** circuit.  
+It merges the concepts of **sustainable energy** and **analog electronics**, showing that even naturally generated voltage can drive a functioning op-amp circuit.
 
-void loop() {
-  float freqs[] = {1, 2, 5, 10, 20, 50};  // frequencies in Hz
-  int n = sizeof(freqs) / sizeof(freqs[0]);
+---
 
-  for (int i = 0; i < n; i++) {
-    float period_ms = 1000.0 / freqs[i]; // one full cycle time in ms
-    unsigned long start = millis();
+### ⚙️ Project Description  
+The circuit is designed using a **low-power MCP602 operational amplifier**, powered by **lemon batteries** connected in series.  
+The lemons act as **bio-voltaic cells**, generating voltage through electrochemical reactions between metal electrodes inserted into each fruit.  
 
-    while (millis() - start < hold_ms) {
-      digitalWrite(OUT_PIN, HIGH);
-      delay(period_ms / 2);
-      digitalWrite(OUT_PIN, LOW);
-      delay(period_ms / 2);
-    }
-  }
+The op-amp is configured as a **low-pass filter**, allowing low-frequency signals to pass while attenuating high frequencies.  
+An **LED indicator** connected at the output shows when the filtered signal is active, proving the successful working of the bio-powered circuit.
 
-  digitalWrite(OUT_PIN, LOW);
-  delay(2000);  // pause before repeating
-}
+---
 
+### 🔬 Working Principle  
+
+1. Multiple lemons are connected in series to generate ~2.7–3 V.  
+2. The generated voltage powers the **op-amp-based low-pass filter**.  
+3. The filter allows low-frequency signals to pass through while attenuating high-frequency noise.  
+4. The filtered signal is used to drive an LED, providing a visible output.  
+
+This demonstrates how **natural biological energy** can be effectively integrated into a simple analog circuit.
+
+---
